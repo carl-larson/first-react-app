@@ -39,7 +39,7 @@ class App extends Component {
           </form>
           <ul>
             {this.state.items.map((item, index) => {
-              return <li key={index}>{this.state.items[index]}</li>
+              return <li key={index}><input type='checkbox'></input><span>{this.state.items[index]}</span><span></span></li>
             })}
           </ul>
         </header>
