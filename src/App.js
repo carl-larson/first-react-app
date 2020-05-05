@@ -48,7 +48,7 @@ class App extends Component {
           </form>
           <ul>
             {this.state.items.map((item, index) => {
-              return <li key={index}><input type='checkbox'></input><span>{this.state.items[index]}</span><button onClick={() => (this.deleteItem(index))}>🗑</button></li>
+              return <li key={item}><input type='checkbox'></input><span>{this.state.items[index]}</span><button onClick={() => (this.deleteItem(index))}>🗑</button></li>
             })}
           </ul>
         </header>
